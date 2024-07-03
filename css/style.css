@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background: #fff;
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.headerTop {
+  display: flex;
+  width: 1250px;
+  margin: auto;
+  align-items: center;
+  gap: 100px;
+}
+
+.headerLogo {
+  display: block;
+}
+
+.headerLogo img {
+  width: 150px;
+  height: 55px;
+}
+
+.headerNav {
+  display: block;
+}
+
+.headerNav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+.headerNav ul li {
+  padding: 45px 0px;
+  position: relative;
+}
+
+.headerNav ul li a {
+  text-decoration: none;
+  color: #101130;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.headerNav ul li::after {
+  position: absolute;
+  background-image: linear-gradient(to left, #7114ef, #1475f7);
+  height: 5px;
+  width: 0%;
+  content: "";
+  transition: 0.6s;
+  left: 0;
+  bottom: 0;
+}
+
+.headerNav ul li:first-child::after {
+  width: 100%;
+}
+
+.headerNav ul li:hover::after {
+  width: 100%;
+}
+
+.navToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.sideNav {
+  display: none;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+}
+
+.sideNavLogo {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sideNavLogo img {
+  width: 150px;
+  height: 55px;
+}
+
+.sideNav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sideNav ul li {
+  padding: 15px 20px;
+}
+
+.sideNav ul li a {
+  text-decoration: none;
+  color: #101130;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.imagebox {
+  display: block;
+}
+
+.imagebox span {
+  display: block;
+  width: 100%;
+}
+
+.imagebox span img {
+  width: 100%;
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1249px) {
+  .headerTop {
+    width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .headerTop {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .headerNav {
+    display: none;
+  }
+  .navToggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .headerLogo {
+    margin-left: -40px;
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .headerTop {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .headerNav {
+    display: none;
+  }
+  .navToggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .headerLogo {
+    margin-left: -40px;
+  }
+}

@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   handleResize();
+  lineIcon.addEventListener("click", toggleNav);
+  crossIcon.addEventListener("click", toggleCross);
 
   window.addEventListener("resize", handleResize);
 });

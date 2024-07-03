@@ -82,9 +82,9 @@ body {
 }
 
 .sideNav {
-  display: none;
+  display: block;
   position: fixed;
-  width: 250px;
+  width: 0px;
   height: 100%;
   background-color: #fff;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -92,6 +92,8 @@ body {
   top: 0;
   left: 0;
   padding-top: 60px;
+  transition: 0.3s;
+  overflow: hidden;
 }
 
 .sideNavLogo {
@@ -175,5 +177,10 @@ body {
 
   .headerLogo {
     margin-left: -40px;
+  }
+
+  .headerLogo img {
+    width: 130px;
+    height: 40px;
   }
 }

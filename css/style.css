@@ -197,6 +197,38 @@ body {
   border-radius: 25px;
 }
 
+.imagebox .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+}
+
+.imagebox .owl-nav .owl-prev span {
+  border: solid 1px #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 36px;
+}
+
+.imagebox .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+}
+
+.imagebox .owl-nav .owl-next span {
+  border: solid 1px #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 36px;
+}
+
 @media screen and (min-device-width: 992px) and (max-device-width: 1249px) {
   .headerTop {
     width: 100%;

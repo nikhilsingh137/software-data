@@ -133,6 +133,19 @@ body {
   position: relative;
 }
 
+.overlay {
+  background-image: url(../jquery3/img/h2-bg-slider1-overlay.png);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 99;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .imagebox span img {
   width: 100%;
 }

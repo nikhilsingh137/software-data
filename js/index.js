@@ -25,3 +25,25 @@ function handleResize() {
 handleResize();
 
 window.addEventListener("resize", handleResize);
+
+$(".imagebox").owlCarousel({
+  loop: true,
+  margin: 10,
+  autoplay: true,
+  autoplayTimeout: 8000,
+  nav: false,
+  dot: false,
+  autoplaySpeed: 1000,
+  animateOut: "fadeOut",
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});

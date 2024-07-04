@@ -130,6 +130,7 @@ body {
 .imagebox span {
   display: block;
   width: 100%;
+  position: relative;
 }
 
 .imagebox span img {

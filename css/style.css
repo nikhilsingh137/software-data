@@ -317,6 +317,9 @@ body {
     padding-right: 14px;
     width: 100%;
   }
+  .imagebox .owl-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-device-width: 428px) and (max-device-width: 510px) {
@@ -362,6 +365,9 @@ body {
   }
   .imagebox span .imageboxText .imageboxData p {
     font-size: 17px;
+  }
+  .imagebox .owl-nav {
+    display: none;
   }
 }
 
@@ -411,5 +417,8 @@ body {
   }
   .imagebox span .imageboxText .imageboxData p {
     font-size: 14px;
+  }
+  .imagebox .owl-nav {
+    display: none;
   }
 }

@@ -136,9 +136,71 @@ body {
   width: 100%;
 }
 
+.imagebox span .imageboxText {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.imagebox span .imageboxText .imageboxData {
+  width: 1250px;
+  margin: auto;
+}
+
+.imageboxData h2 {
+  font-size: 21px;
+  color: #1475f7;
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+.imageboxData h3 {
+  font-size: 70px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.imageboxData p {
+  font-size: 21px;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 28px;
+}
+
+.imageboxData a {
+  background: #1475f7;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 15px 50px;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 25px;
+  border-radius: 25px;
+}
+
 @media screen and (min-device-width: 992px) and (max-device-width: 1249px) {
   .headerTop {
     width: 100%;
+  }
+  .imagebox span .imageboxText .imageboxData {
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 100%;
+  }
+
+  .imagebox span {
+    height: 600px;
+  }
+
+  .imagebox span img {
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -159,9 +221,22 @@ body {
   .headerLogo {
     margin-left: -40px;
   }
+  .imagebox span {
+    height: 600px;
+  }
+  .imagebox span img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .imagebox span .imageboxText .imageboxData {
+    margin: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 100%;
+  }
 }
 
-@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+@media screen and (min-device-width: 511px) and (max-device-width: 767px) {
   .headerTop {
     width: 100%;
     padding: 15px 10px;
@@ -182,5 +257,113 @@ body {
   .headerLogo img {
     width: 130px;
     height: 40px;
+  }
+  .imagebox span {
+    height: 600px;
+  }
+  .imagebox span img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .imagebox span .imageboxText .imageboxData {
+    margin: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 428px) and (max-device-width: 510px) {
+  .headerTop {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .headerNav {
+    display: none;
+  }
+  .navToggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .headerLogo {
+    margin-left: -40px;
+  }
+
+  .headerLogo img {
+    width: 130px;
+    height: 40px;
+  }
+  .imagebox span {
+    height: 450px;
+  }
+  .imagebox span img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .imagebox span .imageboxText .imageboxData {
+    margin: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 100%;
+  }
+  .imagebox span .imageboxText .imageboxData h3 {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  .imagebox span .imageboxText .imageboxData p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 427px) {
+  .headerTop {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .headerNav {
+    display: none;
+  }
+  .navToggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .headerLogo {
+    margin-left: -40px;
+  }
+
+  .headerLogo img {
+    width: 130px;
+    height: 40px;
+  }
+  .imagebox span {
+    height: 400px;
+  }
+  .imagebox span img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .imagebox span .imageboxText .imageboxData {
+    margin: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 100%;
+  }
+  .imagebox span .imageboxText .imageboxData h2 {
+    font-size: 16px;
+  }
+  .imagebox span .imageboxText .imageboxData h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  .imagebox span .imageboxText .imageboxData p {
+    font-size: 14px;
   }
 }
